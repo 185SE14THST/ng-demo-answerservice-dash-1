@@ -13,23 +13,16 @@ project.config(function ($routeProvider) {
 			templateUrl: 'assets/html/main.html',
 			controller: 'mainController'
 			})
-        .when ('/:client', { // Display dash
+        .when ('/:client', { // Client call activity
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})
-        .when ('/client/:number', { // Activate client profile
+        .when ('/client/:home', { 
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})    
-		.when ('/about', {
-			templateUrl: 'assets/html/about.html',
-			controller: 'aboutCOntroller'
-			})
-		.when ('/contact', {
-			templateUrl: 'assets/html/contact.html',
-			controller: 'contactController'
-			})
-        .when ('/home', {
+		
+        .when ('/client/:profile', {
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})
@@ -56,5 +49,13 @@ project.config(function ($routeProvider) {
         .when ('/settings', {
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
+			})
+		.when ('/about', {
+			templateUrl: 'assets/html/about.html',
+			controller: 'aboutCOntroller'
+			})
+		.when ('/contact', {
+			templateUrl: 'assets/html/contact.html',
+			controller: 'contactController'
 			})
 });
