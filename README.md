@@ -1,2 +1,2 @@
-# ng-demo-book
-book inventory demonstration with API call option
+# ng-demo-answerservice-dash-1
+demo answering service dashboard - ng lamp mysql mongo
