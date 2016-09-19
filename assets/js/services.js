@@ -112,5 +112,20 @@ project.service('projectApp1', function() {
                             zip: '33031',
                         },        
                    ]
+// Get messages from Client API
+this.messages = [
+                        { 
+                            id: 1,
+                            client: 1,
+                            from: 'Margret Thatcher',
+                            company: 'Senate House Committee',
+                            phone: '(714) 555-1234',
+                            email: 'margret.thatcher@fedbiz.gov',
+                            message: 'Please call back reguarding the proposal deadline.',
+                            dateCreated: '2016-08-19',
+                            dateRead: '2016-09-19',
+                        },
+       
+                   ]                   
     
 });

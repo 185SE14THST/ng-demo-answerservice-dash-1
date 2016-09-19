@@ -49,7 +49,7 @@ project.directive('userMessages', function() {
 		templateUrl: 'assets/dir/clientmessages.html',
 		replace: true, 
 		scope: { 
-			clientObject: "=", 
+			messagesObject: "=", 
 			
 		}, 
 	};

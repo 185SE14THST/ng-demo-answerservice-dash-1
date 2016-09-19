@@ -17,39 +17,6 @@ project.config(function ($routeProvider) {
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})
-        .when ('/client/:home', { 
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})    
-		
-        .when ('/client/:profile', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-        .when ('/profile', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-        .when ('/messages', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-        .when ('/calendar', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-            .when ('/appointments', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-        .when ('/sendinfo', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
-        .when ('/settings', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
 		.when ('/about', {
 			templateUrl: 'assets/html/about.html',
 			controller: 'aboutCOntroller'
