@@ -23,7 +23,10 @@ project.controller('mainController', ['$scope', '$filter', '$http', '$log', '$ti
     // Pull Client list service
     $scope.template = $scope.templates[0];
     
-    $scope.clientId = $routeParams.client;
+    // Pull client profile
+    $scope.clientProfile = projectApp1.clientelle[$routeParams.client - 1]; // Index offset
+    
+   // Debug: $scope.clientId = $routeParams.client;
     $scope.clientelle = projectApp1.clientelle;
 
         $scope.companyDetails =

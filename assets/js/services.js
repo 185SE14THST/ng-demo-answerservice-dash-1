@@ -8,6 +8,7 @@
 */
 
 project.service('projectApp1', function() {
+    
     // Get client list from API
     this.clientelle = [
                         { 
@@ -101,8 +102,8 @@ project.service('projectApp1', function() {
                             zip: '33031',
                         },
                         {
-                            id: 0,
-                            img: 'user0',
+                            id: 10,
+                            img: 'user10',
                             name: 'G Clooney Restaurants Group',
                             phone1: '(305) 555-1237',
                             email: 'email@xyx.miami',
@@ -111,4 +112,5 @@ project.service('projectApp1', function() {
                             zip: '33031',
                         },        
                    ]
+    
 });
