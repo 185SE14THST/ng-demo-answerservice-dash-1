@@ -4,7 +4,7 @@
 *
 * Programmer:       185SE14THST
 *
-* Date:             2016-09-15
+* Date:             2016-09-19
 */
 
 project.controller('mainController', ['$scope', '$filter', '$http', '$log', '$timeout', '$routeParams','projectApp1', function ($scope, $filter, $http, $log, $timeout, $routeParams, projectApp1) {
@@ -20,8 +20,10 @@ project.controller('mainController', ['$scope', '$filter', '$http', '$log', '$ti
         { name: 'settings', url: 'assets/html/settings.html'}
     ];
     
+    // Pull Client list service
     $scope.template = $scope.templates[0];
     
+    $scope.clientId = $routeParams.client;
     $scope.clientelle = projectApp1.clientelle;
 
         $scope.companyDetails =
@@ -56,26 +58,6 @@ project.controller('contactController', ['$scope', '$filter', '$http', '$log', '
 // Application1
 project.controller('applicationController1', ['$scope', '$filter', '$http', '$log', '$timeout', '$resource', '$location','$routeParams','$interval', 'projectApp1', 'metrics', function ($scope, $filter, $http, $log, $timeout, $resource, $location, $routeParams, $interval, projectApp1, metrics) {
 
-    //$scope.dashboard = projectApp1.chartRowTotals; do work in watcher + {{ sets}}
-
-    $scope.city = projectApp1.city;
-    //$scope.x = projectApp1.$g
-    $scope.recievedCalls = metrics.recievedCalls;
-    $scope.totalMinutes = metrics.totalMinutes;
-    $scope.avgCallTime = metrics.avgCallTime;
-    $scope.avgCallsPerDay = metrics.avgCallsPerDay;
-    $scope.overageMinutes = metrics.overageMinutes;
-    $scope.totalCosts = metrics.totalCosts;
-
-    $scope.$watch('projectApp1.drawChart()', function () {
-        console.log( metrics['recievedCalls'] );
-    });
-
-    $scope.chartTimer = function () {
-        $interval( function chartTimerAction () {
-            projectApp1.drawChart();
-            $log.info('$interval: ' + metrics);
-        }, 3000, 5);
-    }
+    //applicationController1
 
 }]);

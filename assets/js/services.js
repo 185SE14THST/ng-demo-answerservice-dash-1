@@ -4,7 +4,7 @@
 *
 * Programmer:       185SE14THST
 *
-* Date:             2016-09-15
+* Date:             2016-09-19
 */
 
 project.service('projectApp1', function() {
@@ -12,9 +12,9 @@ project.service('projectApp1', function() {
     this.clientelle = [
                         { 
                             id: 1,
-                            img: 'user1.gif',
+                            img: 'user1',
                             name: 'Prianka Chopra Enterprises',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-1234',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -22,9 +22,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 2,
-                            img: 'user2.gif',
+                            img: 'user2',
                             name: 'Amit B Cakes, LLC',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-2345',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -32,9 +32,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 3,
-                            img: 'user3.gif',
+                            img: 'user3',
                             name: 'Joke Factory Group',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-3456',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -42,9 +42,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 4,
-                            img: 'user4.gif',
-                            name: 'Clooney Restaurants Inc.',
-                            phone1: '(305) 555-5555',
+                            img: 'user4',
+                            name: 'O Sha-reef Scuba Diving',
+                            phone1: '(305) 555-4567',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -52,8 +52,8 @@ project.service('projectApp1', function() {
                         },
                         {
                             id: 5,
-                            img: 'user5.gif',
-                            name: 'O Sha-reef Scuba Diving',
+                            img: 'user5',
+                            name: 'PURE Hair Salon',
                             phone1: '(305) 555-5555',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
@@ -62,9 +62,9 @@ project.service('projectApp1', function() {
                         },
 { 
                             id: 6,
-                            img: 'user6.gif',
+                            img: 'user6',
                             name: 'SGS-1 Rick Hunter Consulting',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-5678',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -72,9 +72,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 7,
-                            img: 'user7.gif',
+                            img: 'user7',
                             name: 'Make Up By Judy, LLC',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-6789',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -82,9 +82,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 8,
-                            img: 'user8.gif',
+                            img: 'user8',
                             name: 'Sudan Model Agency',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-7890',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -92,9 +92,9 @@ project.service('projectApp1', function() {
                         },
                         { 
                             id: 9,
-                            img: 'user9.gif',
+                            img: 'user9',
                             name: 'Politico THink Tank SOlutions, LLC',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-0123',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',
@@ -102,9 +102,9 @@ project.service('projectApp1', function() {
                         },
                         {
                             id: 0,
-                            img: 'user0.gif',
+                            img: 'user0',
                             name: 'G Clooney Restaurants Group',
-                            phone1: '(305) 555-5555',
+                            phone1: '(305) 555-1237',
                             email: 'email@xyx.miami',
                             city: 'Miami-Brickell',
                             state: 'FL',

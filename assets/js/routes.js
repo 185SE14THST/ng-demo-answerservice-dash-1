@@ -4,23 +4,23 @@
 *
 * Programmer:       185SE14THST
 *
-* Date:             2016-09-16
+* Date:             2016-09-19
 */
 
 project.config(function ($routeProvider) {
 	$routeProvider
 		.when ('/', {
+			templateUrl: 'assets/html/main.html',
+			controller: 'mainController'
+			})
+        .when ('/:client', { // Display dash
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})
-/*        .when ('/:list' || ':list', {
+        .when ('/client/:number', { // Activate client profile
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
-			})*/
-        .when ('/:list:/user' || ':list/user', {
-			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
-			})
+			})    
 		.when ('/about', {
 			templateUrl: 'assets/html/about.html',
 			controller: 'aboutCOntroller'
@@ -37,7 +37,7 @@ project.config(function ($routeProvider) {
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})
-            .when ('/messages', {
+        .when ('/messages', {
 			templateUrl: 'assets/html/home.html',
 			controller: 'mainController'
 			})

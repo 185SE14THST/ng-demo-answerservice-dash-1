@@ -11,10 +11,94 @@ project.directive('clientList', function() {
 	return {
 		restrict: 'AECM',
 		templateUrl: 'assets/dir/clientlist.html',
-		replace: true, // removes the searchResult/search-result HTML element but still populates the data
+		replace: true, 
 		scope: { 
-			clientObject: "=", // name it whatever, refer to it in HTML tag onject-name / objectName
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userDashboard', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientdash.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userProfile', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientprofile.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userMessages', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientmessages.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userCalendar', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientcalendar.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
 			formattedAddressFunction: "&" 
+		}, 
+	};
+});
+
+project.directive('userAppointments', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientapp.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userSendInfo', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientsendinfo.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
+		}, 
+	};
+});
+
+project.directive('userSettings', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientsettings.html',
+		replace: true, 
+		scope: { 
+			clientObject: "=", 
+			
 		}, 
 	};
 });
