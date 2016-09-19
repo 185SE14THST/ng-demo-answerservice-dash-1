@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="project">
+<head>
+  <title>ng-demo-answerservice-dash-1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap Requirements -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/starter-template.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!-- React styles -->
+    
+    <link rel="stylesheet" href="assets/css/react-theme.css">
+    <script src="assets/js/react-theme.js"></script>
+<!-- Font Awsome -->
+<script src="assets/js/a96b863fd6.js"></script>
+    
+<!-- Application Requirements -->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <script src="assets/js/angular-resource.min.js"></script>
+    <script src="assets/js/angular-mocks.js"></script>
+<!-- Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+    
+  <body ng-cloak ng-controller="mainController">
+
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+      <a class="navbar-brand" href="#/">{{ companyDetails.appName }}</a>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/contact">Contact</a>
+        </li>
+          <form class="pull-xs-right">
+          <input type="text" class="form-control" placeholder="Entter client or search...">
+        </form>
+      </ul>
+    </nav>
+      
+      <!-- content: start -------------------------------------------------------------------------->
+      <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Clients</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dapibus nulla, non tincidunt. </p>
+          <hr>
+            <div id="" style="overflow-y: scroll; height:600px;"><!-- Active Clients begin -->
+        <div class="list-group">
+            <small><client-list client-object="clients" ng-repeat="clients in clientelle"></client-list></small>     
+        </div>
+      </div><!-- Active clients end -->
+          <hr>
+          
+      </div>
+        <!-- start dashboard -->
+        <div ng-view></div>
+        <!-- end dashboard-->
+		</div>
+	</div>
+</div>
+      <!-- content: end -------------------------------------------------------------------------->
+
+<!-- Application Configuration -->
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/routes.js"></script>
+    <script src="assets/js/values.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/directives.js"></script>
+    <script src="assets/js/controllers.js"></script>
+
+<!-- Application Customizations -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
