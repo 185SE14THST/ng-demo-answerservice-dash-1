@@ -55,6 +55,18 @@ project.directive('userMessages', function() {
 	};
 });
 
+project.directive('test', function() {
+	return {
+		restrict: 'AECM',
+		templateUrl: 'assets/dir/clientmessages.html',
+		replace: true, 
+		scope: { 
+			testObject: "=", 
+			
+		}, 
+	};
+});
+
 project.directive('userCalendar', function() {
 	return {
 		restrict: 'AECM',

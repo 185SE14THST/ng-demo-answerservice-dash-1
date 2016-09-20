@@ -61,7 +61,7 @@ project.service('projectApp1', function() {
                             state: 'FL',
                             zip: '33031',
                         },
-{ 
+                        { 
                             id: 6,
                             img: 'user6',
                             name: 'SGS-1 Rick Hunter Consulting',
@@ -144,8 +144,8 @@ this.messages = [
                             phone: '(432) 555-0009',
                             email: '',
                             message: 'Reminder to pick up 4,598 pita sandwiches for dinner on Tuesday.',
-                            dateCreated: '2016-06-1',
-                            dateRead: '2016-06-3',
+                            dateCreated: '2016-06-01',
+                            dateRead: '2016-06-03',
                         },                       
        
                    ]                   
