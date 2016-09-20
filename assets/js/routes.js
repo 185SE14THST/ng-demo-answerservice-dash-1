@@ -15,7 +15,7 @@ project.config(function ($routeProvider) {
 			})
         .when ('/:client', { // Client call activity
 			templateUrl: 'assets/html/home.html',
-			controller: 'mainController'
+			controller: 'applicationController1'
 			})
 		.when ('/about', {
 			templateUrl: 'assets/html/about.html',

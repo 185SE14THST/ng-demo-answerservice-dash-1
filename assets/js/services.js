@@ -122,9 +122,31 @@ this.messages = [
                             phone: '(714) 555-1234',
                             email: 'margret.thatcher@fedbiz.gov',
                             message: 'Please call back reguarding the proposal deadline.',
-                            dateCreated: '2016-08-19',
-                            dateRead: '2016-09-19',
+                            dateCreated: '2016-08-17',
+                            dateRead: '2016-09-18',
                         },
+                        {
+                            id: 2,
+                            client: 1,
+                            from: 'Margret Thatcher',
+                            company: 'Senate House Committee',
+                            phone: '(714) 555-1234',
+                            email: 'margret.thatcher@fedbiz.gov',
+                            message: 'Would liek to schedule a senate hearing commitee to discuss triable rights in South Dekota.',
+                            dateCreated: '2016-08-18',
+                            dateRead: '2016-09-19',
+                        },  
+                        {
+                            id: 3,
+                            client: 1,
+                            from: 'Bill Isley',
+                            company: 'Pita King',
+                            phone: '(432) 555-0009',
+                            email: '',
+                            message: 'Reminder to pick up 4,598 pita sandwiches for dinner on Tuesday.',
+                            dateCreated: '2016-06-1',
+                            dateRead: '2016-06-3',
+                        },                       
        
                    ]                   
     

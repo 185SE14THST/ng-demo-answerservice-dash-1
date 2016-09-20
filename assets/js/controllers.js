@@ -20,27 +20,22 @@ project.controller('mainController', ['$scope', '$filter', '$http', '$log', '$ti
         { name: 'settings', url: 'assets/html/settings.html'}
     ];
     
-    // Pull Client list service
-    $scope.template = $scope.templates[0];
+    $scope.clientId = $routeParams.client;              // Set client ID from route parameter
+    $scope.clientelle = projectApp1.clientelle;         // Get list of clients
+    $scope.template = $scope.templates[0];              // Pull Client list service for sidebar
     
-    // Pull client profile
-    $scope.clientProfile = projectApp1.clientelle[$routeParams.client - 1]; // Index offset
-    
-   // Debug: $scope.clientId = $routeParams.client;
-    $scope.clientelle = projectApp1.clientelle;
-
-        $scope.companyDetails =
-        {
-            'appName': 'Answer Service',
-            'appYear': '2012',
-            'companyName': 'Acme Widget',
-            'companyAddress': '5 Brickell Ave',
-            'companyCity': 'Miami-Brickell',
-            'companyState': 'FL',
-            'companyZip': '33131',
-            'companyPhone': '305-555-5555',
-            'companyEmail': 'acme@amce.com'
-        };
+    $scope.companyDetails =
+    {
+        'appName': 'Answer Service',
+        'appYear': '2012',
+        'companyName': 'Acme Widget',
+        'companyAddress': '5 Brickell Ave',
+        'companyCity': 'Miami-Brickell',
+        'companyState': 'FL',
+        'companyZip': '33131',
+        'companyPhone': '305-555-5555',
+        'companyEmail': 'acme@amce.com'
+    };
 
 }]);
 
@@ -59,8 +54,23 @@ project.controller('contactController', ['$scope', '$filter', '$http', '$log', '
 
 
 // Application1
-project.controller('applicationController1', ['$scope', '$filter', '$http', '$log', '$timeout', '$resource', '$location','$routeParams','$interval', 'projectApp1', 'metrics', function ($scope, $filter, $http, $log, $timeout, $resource, $location, $routeParams, $interval, projectApp1, metrics) {
+project.controller('applicationController1', ['$scope', '$filter', '$http', '$log', '$timeout', '$resource', '$location','$routeParams','$interval', 'projectApp1', function ($scope, $filter, $http, $log, $timeout, $resource, $location, $routeParams, $interval, projectApp1) {
 
-    //applicationController1
+    $scope.clientProfile = projectApp1.clientelle[$routeParams.client - 1]; // Pull client profile w/ Index offset
+    $scope.clientMessages = function() { // Pull client messages
+        var msgArray = projectApp1.messages;
+        var msgArrayByClientId = [];
+            for (m in msgArray) {
+                if ( (msgArray[m]['client']) == ($routeParams.client ) ) {
+                    msgArrayByClientId += msgArray[m];
+                    console.log('IN!'+($routeParams.client - 1));
+                    console.log(msgArrayByClientId);
+                }
+            }
+        return msgArrayByClientId;
+    }
+    console.log('OUT!');
+    console.log($scope.clientMessages());
+    
 
-}]);
+}]); // Dont forget to wrap in big if rParam > 0
